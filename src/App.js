@@ -1,10 +1,12 @@
 import './App.css';
-import { SearchBar } from './components/SearchBar';
+import { OptionsDropdown } from './components/OptionsDropdown';
+import { SearchBar } from './components/SearchBar.jsx';
 
 function App() {
   return (
     <div className="App">
-      <SearchBar></SearchBar>
+      <SearchBar />
+      <OptionsDropdown countries={['A', 'B', 'C']} />
     </div>
   );
 }
