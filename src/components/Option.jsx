@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
 
-export function Option(props) {
+export function Option({country,handleClick}) {
 
     return (
-      <div>
-        {props.country}
-      </div>
+      <button onClick={()=>handleClick()}>
+        {country}
+      </button>
     );
   }
   

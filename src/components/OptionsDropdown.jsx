@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Option } from './Option';
 
-export function OptionsDropdown({countries}) {
-    // const [countries, setCountries] = useState([]);
-
+export function OptionsDropdown({countries,handleClick}) {
     return (
       <div>
-        {countries.map((country,index)=>{return<Option key={index} country={`${country}`}/>})}
+        {countries.map((country,index)=>{return<Option key={index} country={`${country}`} handleClick={()=>handleClick(country)}/>})}
       </div>
     );
   }
